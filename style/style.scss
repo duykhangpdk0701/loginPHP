@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: rgb(52, 51, 52);
+}
+
+nav {
+  height: 8vh;
+  width: 100%;
+  background-color: rgb(18, 17, 19);
+}
+
+.wrapper {
+  margin: auto;
+  width: 900px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: inherit;
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+
+  ul {
+    list-style: none;
+    display: flex;
+    width: 60%;
+    justify-content: space-around;
+  }
+}
+
+.content {
+  flex-direction: column;
+  text-align: center;
+  background-color: white;
+  padding: 20px;
+  .index-intro {
+    h1 {
+      font-size: 35px;
+      margin-top: 25px;
+    }
+
+    p {
+      margin-top: 10px;
+      font-size: 20px;
+    }
+  }
+}
+
+.index-categories {
+  width: 100%;
+  margin-top: 30px;
+
+  h2 {
+    margin-bottom: 30px;
+  }
+
+  .index-categories-list {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+
+    div {
+      background-color: rgb(205, 203, 205);
+      height: 205px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      h3 {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+.sign-up-form {
+  form {
+    display: flex;
+    flex-direction: column;
+
+    input {
+      width: 300px;
+      font-size: 15px;
+      padding: 5px;
+      margin: 5px 0;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 7px 0;
+      font-size: 15px;
+    }
+  }
+}
+
+.error-string {
+  margin-top: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #c0392b;
+}
